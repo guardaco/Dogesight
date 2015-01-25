@@ -1,0 +1,52 @@
+{
+  "name": "Litesight",
+  "description": "An open-source frontend for the Litesight API. The Litesight API provides you with a convenient, powerful and simple way to query and broadcast data on the Litecoin network and build your own services with it.",
+  "version": "0.2.5",
+  "author": {
+    "name": "pembo210",
+    "email": "pembo210@gmail.com"
+  },
+  "repository": "git://github.com/pembo210/Litesight.git",
+  "contributors": [
+    {
+      "name": "SS",
+      "email": "flappy@flappycoin.io"
+    },
+   {
+      "name": "pembo210",
+      "email": "pembo210@gmail.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/pembo210/Litesight/issues"
+  },
+  "homepage": "https://github.com/pembo210/Litesight",
+  "license": "MIT",
+  "keywords": [
+    "insight",
+    "blockchain",
+    "blockexplorer",
+    "litecoin",
+    "bitcore",
+    "front-end"
+  ],
+  "scripts": {
+    "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/Litesight-bitcore-api"
+  },
+  "dependencies": {
+    "Litesight-api": "git://github.com/pembo210/Litesight-api.git"
+  },
+  "devDependencies": {
+    "bower": "~1.2.8",
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.11",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-watch": "*",
+    "grunt-macreload": "*",
+    "grunt-css": "~0.5.4",
+    "grunt-markdown": "~0.5.0",
+    "grunt-angular-gettext": "^0.2.15"
+  }
+}

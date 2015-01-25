@@ -1,13 +1,13 @@
 Dogesight coming soon...
 
-# *Litesight*
+# *Dogesight*
 
-*Litesight* is an open-source Litecoin blockchain explorer with complete REST and websocket APIs.
-Litesight runs in NodeJS, uses AngularJS for the front-end and LevelDB for storage.
+*Dogesight* is an open-source Dogecoin blockchain explorer with complete REST and websocket APIs.
+Dogesight runs in NodeJS, uses AngularJS for the front-end and LevelDB for storage.
 
-Check some screenshots and more details at [litesight's project homepage](https://github.com/pembo210/Litesight).
+Check some screenshots and more details at [Dogesight's project homepage](https://github.com/pembo210/Dogesight).
 
-*Litesight* project is now split in two repositories. One for the [API](https://github.com/pembo210/Litesight-api)
+*Dogesight* project is now split in two repositories. One for the [API](https://github.com/pembo210/Dogesight-api)
 and for the front-end. This repository is for the front-end, which will install the API as a NPM dependency.
 
 
@@ -21,9 +21,9 @@ and for the front-end. This repository is for the front-end, which will install 
 ## Quick Install
   Check the Prerequisites section above before installing.
 
-  To install litesight, clone the main repository:
+  To install Dogesight, clone the main repository:
 
-    $ git clone https://github.com/pembo210/Litesight.git && cd Litesight
+    $ git clone https://github.com/pembo210/Dogesight.git && cd Dogesight
 
   Install dependencies:
 
@@ -35,10 +35,10 @@ and for the front-end. This repository is for the front-end, which will install 
     
   Then open a browser and go to:
 
-    http://localhost:3000
+    http://localhost:2000
 
-  If *litesight* reports problems connecting to **litecoind** please check the CONFIGURATION section of 
-  [litesight-api README](https://github.com/pembo210/Litesight-api/blob/master/README.md). To set the 
+  If *Dogesight* reports problems connecting to **dogecoind** please check the CONFIGURATION section of 
+  [Dogesight-api README](https://github.com/pembo210/Dogesight-api/blob/master/README.md). To set the 
   environment variables run something like:
   
      $ INSIGHT_NETWORK=livenet BITCOIND_USER=user BITCOIND_PASS=pass INSIGHT_PUBLIC_PATH=public  npm start
@@ -47,17 +47,17 @@ and for the front-end. This repository is for the front-end, which will install 
   Please note that the app will need to sync its internal database
   with the blockchain state, which may take some time. You can check
   sync progress from within the web interface. More details about that process
-  on [litesight-api README](https://github.com/pembo210/Litesight-api/blob/master/README.md). 
+  on [Dogesight-api README](https://github.com/pembo210/Dogesight-api/blob/master/README.md). 
   
   
 ## Nginx Setup
 
-To use Nginx as a reverse proxy for litesight, use the following base [configuration](https://gist.github.com/matiu/bdd5e55ff0ad90b54261)
+To use Nginx as a reverse proxy for Dogesight, use the following base [configuration](https://gist.github.com/matiu/bdd5e55ff0ad90b54261)
 
 
 ## Development
 
-To run litesight locally for development mode:
+To run Dogesight locally for development mode:
 
 Install bower dependencies:
 
@@ -77,36 +77,36 @@ There is a convenient Gruntfile.js for automation during editing the code
 $ grunt
 ```
 
-In case you are developing *litesight* and *litesight-api* together, you can do the following:
+In case you are developing *Dogesight* and *Dogesight-api* together, you can do the following:
 
-* Install litesight and litesight-api on the same path ($IROOT)
+* Install Dogesight and Dogesight-api on the same path ($IROOT)
 
 ```
-  $ cd $IROOT/Litesight
+  $ cd $IROOT/Dogesight
   $ grunt
 ```
 
 in other terminal:
 
 ```
-  $ cd $IROOT/litesight-api
-  $ ln -s ../Litesight/public
+  $ cd $IROOT/Dogesight-api
+  $ ln -s ../Dogesight/public
   $ INSIGHT_PUBLIC_PATH=public node insight.js 
 ```
 
 
 ``` 
-INSIGHT_PUBLIC_PATH=Litesight/public  grunt
+INSIGHT_PUBLIC_PATH=Dogesight/public  grunt
 ```
 
-at litesight-api's home path (edit the path according your setup).
+at Dogesight-api's home path (edit the path according your setup).
 
-**also** in the Litesight-api path. (So you will have to grunt process running, one for litesight and one for litesight-api).
+**also** in the Dogesight-api path. (So you will have to grunt process running, one for Dogesight and one for Dogesight-api).
 
 
 ## Multilanguage support
 
-litesight use [angular-gettext](http://angular-gettext.rocketeer.be) for
+Dogesight use [angular-gettext](http://angular-gettext.rocketeer.be) for
 multilanguage support. 
 
 To enable a text to be translated, add the ***translate*** directive to html tags. See more details [here](http://angular-gettext.rocketeer.be/dev-guide/annotate/). Then, run:
@@ -133,11 +133,11 @@ compile***.
 
 ## Note
 
-For more details about the *litesight-api* configs and end-point, just go to [litesight-api github repository](https://github.com/pembo210/litesight-api) or read the [documentation](https://github.com/pembo210/Litesight-api/blob/master/README.md)
+For more details about the *Dogesight-api* configs and end-point, just go to [Dogesight-api github repository](https://github.com/pembo210/Dogesight-api) or read the [documentation](https://github.com/pembo210/Dogesight-api/blob/master/README.md)
 
 ## Contribute
 
-Contributions and suggestions are welcomed at [litesight github repository](https://github.com/pembo210/Litesight).
+Contributions and suggestions are welcomed at [Dogesight github repository](https://github.com/pembo210/Dogesight).
 
 
 ## License

@@ -1,12 +1,12 @@
 {
-  "name": "Litesight",
-  "description": "An open-source frontend for the Litesight API. The Litesight API provides you with a convenient, powerful and simple way to query and broadcast data on the Litecoin network and build your own services with it.",
+  "name": "Dogesight",
+  "description": "An open-source frontend for the Dogesight API. The Dogesight API provides you with a convenient, powerful and simple way to query and broadcast data on the Dogecoin network and build your own services with it.",
   "version": "0.2.5",
   "author": {
     "name": "pembo210",
     "email": "pembo210@gmail.com"
   },
-  "repository": "git://github.com/pembo210/Litesight.git",
+  "repository": "git://github.com/pembo210/Dogesight.git",
   "contributors": [
     {
       "name": "SS",
@@ -18,23 +18,23 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/pembo210/Litesight/issues"
+    "url": "https://github.com/pembo210/Dogesight/issues"
   },
-  "homepage": "https://github.com/pembo210/Litesight",
+  "homepage": "https://github.com/pembo210/Dogesight",
   "license": "MIT",
   "keywords": [
     "insight",
     "blockchain",
     "blockexplorer",
-    "litecoin",
+    "Dogecoin",
     "bitcore",
     "front-end"
   ],
   "scripts": {
-    "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/Litesight-bitcore-api"
+    "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/Dogesight-bitcore-api"
   },
   "dependencies": {
-    "Litesight-api": "git://github.com/pembo210/Litesight-api.git"
+    "Dogesight-api": "git://github.com/pembo210/Dogesight-api.git"
   },
   "devDependencies": {
     "bower": "~1.2.8",

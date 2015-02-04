@@ -19,11 +19,11 @@ angular.module('insight.currency').controller('CurrencyController',
         var response;
 
         if (this.symbol === 'USD') {
-          response = _roundFloat((value * this.factor), 2);
-        } else if (this.symbol === 'mBTC') {
+          response = _roundFloat((value * this.factor), 8);
+        } else if (this.symbol === 'mDoge') {
           this.factor = 1000;
           response = _roundFloat((value * this.factor), 5);
-        } else if (this.symbol === 'bits') {
+        } else if (this.symbol === 'uDoge') {
           this.factor = 1000000;
           response = _roundFloat((value * this.factor), 2);
         } else {
@@ -45,11 +45,11 @@ angular.module('insight.currency').controller('CurrencyController',
 
       if (currency === 'USD') {
         Currency.get({}, function(res) {
-          $rootScope.currency.factor = $rootScope.currency.bitstamp = res.data.bitstamp;
+          $rootScope.currency.factor = $rootScope.currency.cryptsyusd = res.data.cryptsyusd;
         });
-      } else if (currency === 'mBTC') {
+      } else if (currency === 'mDoge') {
         $rootScope.currency.factor = 1000;
-      } else if (currency === 'bits') {
+      } else if (currency === 'uDoge') {
         $rootScope.currency.factor = 1000000;
       } else {
         $rootScope.currency.factor = 1;
@@ -58,7 +58,7 @@ angular.module('insight.currency').controller('CurrencyController',
 
     // Get initial value
     Currency.get({}, function(res) {
-      $rootScope.currency.factor = $rootScope.currency.bitstamp = res.data.bitstamp;
+      $rootScope.currency.factor = $rootScope.currency.cryptsyusd = res.data.cryptsyusd;
     });
 
   });

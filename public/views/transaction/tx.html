@@ -136,7 +136,7 @@
 
               <div class="ellipsis">
                 <span data-ng-show="vout.notAddr">{{vout.addr}}</span>
-                <span class="text-muted" title="Current Flappycoin Address" data-ng-show="address == $root.currentAddr" data-ng-repeat="address in vout.addr.split(',')">{{vout.addr}}</span>
+                <span class="text-muted" title="Current Dogecoin Address" data-ng-show="address == $root.currentAddr" data-ng-repeat="address in vout.addr.split(',')">{{vout.addr}}</span>
                 <a href="/address/{{address}}"  data-ng-show="!vout.notAddr && address != $root.currentAddr" data-ng-repeat="address in vout.addr.split(',')">{{address}}</a>
               </div>
             </div>

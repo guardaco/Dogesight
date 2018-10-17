@@ -6,11 +6,12 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="fragment" content="!">
 	<title data-ng-bind="'Dogesight | Blockchain Explorer for Dogesight'">Dogesight</title>
-	<meta name="keywords" content="Dogesight, dogecoin, transactions, blocks, address, block chain, best block, difficulty, hash serialized">
-	<meta name="description" content="Dogecoin Insight. View detailed information on all dogecoin transactions and block.">
-	<link rel="shortcut icon" href="/img/icons/favicon.ico">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic">
-	<link rel="stylesheet" href="/css/main.min.css">
+	<meta name="keywords" content="Dogesight, guarda, changenow, dogecoin, transactions, blocks, address, block chain, best block, difficulty, hash serialized">
+	<meta name="description" content="Doge Blockexplorer. Check your DOGE transactions and blocks">
+	<link rel="shortcut icon" href="/img/icons/icon.png" type="image/png">
+	<link rel="stylesheet" href="/css/main.min.css?v=3.4">
+	<link rel="stylesheet" href="/css/guarda.css?v=3.12">
+
 </head>
 <body ng-cloak class="ng-cloak">
   <div>
@@ -43,23 +44,29 @@
 		<section class="container" data-ng-view></section>
 	</div>
 	<div id="footer" role="navigation">
-    <div class="container" data-ng-controller="FooterController">
-      <div class="languages m20t pull-left" ng-show="availableLanguages.0">
-        [ 
-        <a href="#" 
-          ng-click="setLanguage(l.isoCode)"
-          ng-class="{'selected': defaultLanguage == l.isoCode}" 
-          ng-repeat="l in availableLanguages">
-          <span ng-show="$last"> &middot; </span> {{l.name}}
-        </a>
-         ]
+    <div class="container" data-ng-controller="FooterController" id="footer_container" >
+      <div class="links m20t pull-left" style="font-size: 13px;" id="links_container">
+       <span class="languages" ng-show="availableLanguages.0">
+          [
+          <a href="http://dogeblocks.com">dogeblocks.com</a>
+          ]
+        </span>
+        &nbsp;
+        [
+        <a href="messages/verify" translate>verify message</a>
+        <span> &middot; </span>
+        <a href="tx/send" translate>broadcast transaction</a>
+        ]
+        <p>Donate DOGE: DJCEyg4hctWTz4ZTbYrszzuHubmRe2aVyb</p>
       </div>
-      <a class="insight m10v pull-right" target="_blank" href="https://github.com/pembo210/dogesight-api">Dogesight <small>API v{{version}}</small></a>
+      <a class="m10v pull-right email" target="_blank" href="mailto:dogeblocks@gmail.com">dogeblocks@gmail.com</small></a><br>
+			<a class="pull-right links coin-link" href="https://coincodex.com/crypto/dogecoin/">https://coincodex.com/crypto/dogecoin/<a>
     </div>
-  </div>
+</div>
 	<script src="/socket.io/socket.io.js"></script>
 	<script src="/js/vendors.min.js"></script>
 	<script src="/js/angularjs-all.min.js"></script>
 	<script src="/js/main.min.js"></script>
+	<script src="https://widgets.coingecko.com/coingecko-coin-price-chart-widget.js"></script>
 </body>
 </html>

@@ -64,7 +64,7 @@ select{background:#fff!important}
 html{font-size:62.5%;-webkit-tap-highlight-color:rgba(0,0,0,0)}
 body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}
 input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
-a{color:#ddd;text-decoration:none}
+a{text-decoration:none}
 a:hover,a:focus{color:#fffffe;text-decoration:none}
 a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
 figure{margin:0}
@@ -1394,7 +1394,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{color:#373D42;}
 .navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{background-color:#373D42}
 .navbar-default{background-color:#BA9F33;margin:0;border:0}
 .navbar-default .navbar-nav>li>a{color:#F4FBE8;font-family:Ubuntu,sans-serif;padding-left:20px;padding-right:20px}
-.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus{background-color:#988430;color:#fff}
+.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus{background-color:#906CD7;color:#fff}
 .navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>.active>a:hover{background-color:#fff}
 .navbar-form .form-group{display:block}
 .navbar-form{margin-top:15px}

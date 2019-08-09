@@ -31,7 +31,7 @@
     "front-end"
   ],
   "scripts": {
-    "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/Dogesight-bitcore-api"
+    "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/insight-bitcore-api"
   },
   "dependencies": {
     "Dogesight-api": "git://github.com/alexeirbv/insight-doge-api"

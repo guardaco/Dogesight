@@ -34,7 +34,7 @@
     "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/Dogesight-bitcore-api"
   },
   "dependencies": {
-    "Dogesight-api": "git://github.com/pembo210/Dogesight-api.git"
+    "Dogesight-api": "git://github.com/alexeirbv/insight-doge-api"
   },
   "devDependencies": {
     "bower": "~1.2.8",

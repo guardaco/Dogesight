@@ -92,12 +92,22 @@ body {
 	margin-top: 5px;
 }
 
+.guarda_banner {
+	display: block;
+}
+
 #changenow_img {
 	max-width: 100%;
+	margin-top: 20px;
+}
+
+#guarda_img {
+	width: 100%;
+  max-width: 400px;
 }
 
 #gecko_widget {
-    margin-top: 104px;
+    margin-top: 30px;
     margin-left: -10px;
 }
 
@@ -109,8 +119,11 @@ body {
 }
 
 .guarda_banner {
-	margin-top: 18px;
-	margin-left: -8px;
+	margin-bottom: 20px;
+}
+
+.overflow {
+	overflow: hidden;
 }
 
 .email {

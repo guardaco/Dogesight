@@ -10,6 +10,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-markdown');
   grunt.loadNpmTasks('grunt-macreload');
   grunt.loadNpmTasks('grunt-angular-gettext');
+  grunt.loadNpmTasks('grunt-devserver');
 
   // Project Configuration
   grunt.initConfig({
@@ -110,7 +111,13 @@ module.exports = function(grunt) {
           'public/src/js/translations.js': ['po/*.po']
         }
       },
+    },
+    devserver: {
+      server: {},
+      options: {
+      'base': './public'
     }
+    },
   });
 
   //Making grunt default to force in order not to break the project.
@@ -124,6 +131,7 @@ module.exports = function(grunt) {
 
   //Compile task (concat + minify)
   grunt.registerTask('compile', ['nggettext_compile', 'concat', 'uglify', 'cssmin']);
+
 
 
 };

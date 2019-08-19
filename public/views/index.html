@@ -5,7 +5,7 @@
 <section data-ng-controller="IndexController" data-ng-init="index()">
   <div class="container">
     <div id="home" class="row">
-      <div class="col-xs-12 col-md-10">
+      <div class="col-xs-12 col-md-9">
 
         <div id="search-form-mobile" class="visible-xs" data-ng-include src="'/views/includes/search.html'"></div>
 
@@ -59,7 +59,12 @@
 
       </div>
 
-      <div class="col-xs-12 col-md-2" id="gecko_widget">
+      <div class="col-xs-12 col-md-3 overflow" id="gecko_widget">
+
+                  <div class="text-center">
+                    <a class="guarda_banner" href="https://guarda.co/?utm_source=blockexplorers&utm_medium=banner&utm_campaign=guarda">
+                    <img id="guarda_img" src="img/guarda.png" style=""></a>
+                 </div>
         <coingecko-coin-price-chart-widget currency="usd" coin-id="dogecoin" locale="en" height="300" width="0"></coingecko-coin-price-chart-widget>
       </div>
       </div> <!-- END OF COL-3 -->
